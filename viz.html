@@ -20,35 +20,27 @@
 
 <body>
     <button onclick="render()">Render</button>
-    <div class="container">
-        <div class="row">
+    <div class="row">
 
-            <!-- Basic Visualization Create -->
-            <div id="vizBasic" class="col-xs-6">
-                <div id="vizBasicDiv"></div>
-            </div>
-
-            <!-- Extension Visualization Create -->
-            <div id="vizExt" class="col-xs-6">
-                <div id="vizExtDiv"></div>
-            </div>
-
+        <!-- Basic Visualization Create -->
+        <div id="vizBasic" class="col-xs-6 col-md-3">
+            <div id="vizBasicDiv"></div>
         </div>
 
-        <div class="row">
+        <!-- Extension Visualization Create -->
+        <div id="vizExt" class="col-xs-6 col-md-3">
+            <div id="vizExtDiv"></div>
+        </div>
 
-            <!-- Visualization Get -->
-            <div id="vizGet" class="col-xs-6">
-                <div id="vizGetDiv"></div>
-            </div>
+        <!-- Visualization Get -->
+        <div id="vizGet" class="col-xs-6 col-md-3">
+            <div id="vizGetDiv"></div>
+        </div>
 
-            <!-- qlik-visual Web Component -->
-            <div id="qlikViz" class="col-xs-6">
-                <qlik-visual appid="381a4a76-9f48-47fc-94a4-78743f642581"
-                             type="piechart"
-                             config='{"host":"10.76.224.76","port":80,"prefix":"/","isSecure":false}'
-                             cols='["State","=Count(Shape)"]'></qlik-visual>
-            </div>
+        <!-- qlik-visual Web Component -->
+        <div id="qlikViz" class="col-xs-6 col-md-3">
+            <qlik-visual appid="381a4a76-9f48-47fc-94a4-78743f642581" type="piechart" config='{"host":"10.76.224.76","port":80,"prefix":"/","isSecure":false}'
+                cols='["State","=Count(Shape)"]'></qlik-visual>
         </div>
     </div>
 
